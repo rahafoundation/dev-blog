@@ -2,6 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
 
 .page-header {
   background: linear-gradient(90deg, #5ec3e9, #96E6B3)
