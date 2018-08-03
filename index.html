@@ -1,0 +1,11 @@
+<p>
+  Welcome to the blog of the Raha developers. We will be posting our learnings about software development
+  here as they occur. Thanks for visiting!
+</p>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
