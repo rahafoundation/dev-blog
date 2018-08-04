@@ -1,1 +1,8 @@
 theme: jekyll-theme-cayman
+omar_diab:
+  name: Omar Diab
+  email: omar@raha.io
+  website: https://omardiab.com
+default_author:
+  name: Raha Development Team
+  email: founders@raha.io
