@@ -8,7 +8,15 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      {% assign author=site[post.author] %}
+      {% if author %}
+        {% assign authorName = author.name %}
+      {% else %}
+        {% assign authorName = site.default_author.name %}
+      {% endif %}
+
+      {% comment %} TODO: link author separately to filter by author {% endcomment %}
+      <a href="{{ post.url }}">{{ post.title }}, by {{ authorName }}</a>
     </li>
   {% endfor %}
 </ul>
