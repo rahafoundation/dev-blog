@@ -1,0 +1,12 @@
+{% comment %} TODO: add more details than name {% endcomment %}
+{% assign authorDetails = site[include.author] %}
+<header class="author">
+  <span class="author--name">
+    Written by
+    {% if authorDetails %}
+      {{ authorDetails.name }}
+    {% else %}
+      {{ site.default_author.name }}
+    {% endif %}
+  </span>
+</header>
