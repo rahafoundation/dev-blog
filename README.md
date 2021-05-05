@@ -1,5 +1,7 @@
 # dev-blog
 
+# This codebase is no longer maintained.
+
 Blog of the Raha software development team. Rendered using Github Pages' Jekyll
 integration.
 
